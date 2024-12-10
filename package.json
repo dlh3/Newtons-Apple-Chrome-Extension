@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run prep",
     "prep": "npm run exp && node out.js",
-    "exp": "next build && next export",
+    "exp": "next build",
     "run": "next start",
     "dev": "next dev"
   },
