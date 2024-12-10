@@ -1,9 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "NEXT-CHROME-STARTER",
-  "short_name": "N-C-S",
+  "name": "Newton's Apple",
   "version": "0.0.1",
-  "description": "Next.js Chrome Extension Starter, Demo Example by ibnzUK. https://github.com/ibnzUK/next-chrome-starter",
+  "description": "Next.js-based Chrome Extension to implement portfolio rebalancing and other extra features for the Newton.co (https://newton.co/) Canadian crypto exchange",
   "icons": {
     "16": "/icons/icon16.png",
     "32": "/icons/icon32.png",
@@ -19,8 +18,8 @@
   ],
   "content_scripts": [
     {
-      "matches": ["https://*/*", "http://*/*"],
-      "js": ["inject.js"]
+      "matches": ["https://web.newton.co/*", "http://web.newton.co/*"],
+      "js": ["apple.js"]
     }
   ],
   "host_permissions": ["<all_urls>"],
